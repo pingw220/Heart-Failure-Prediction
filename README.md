@@ -26,7 +26,7 @@ To use the interactive web application:
 
 1. Ensure you have Python and Flask installed.
 2. Clone the repository and navigate to the project directory.
-3. Install required Python packages: `pip install -r requirements.txt`.
+3. Install required Python packages.
 4. Run the Flask app: `python app.py`.
 5. Open a web browser and go to `http://127.0.0.1:5000/` to interact with the application.
 6. Input your health attributes in the form provided and submit to receive a prediction.
