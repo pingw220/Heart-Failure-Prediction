@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Heart Disease Prediction</title>
+</head>
+<body>
+    <h1>Heart Disease Prediction</h1>
+    <form method="post">
+        <label>Sex:</label>
+        <select name="Sex">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br>
+        <label>Chest Pain Type:</label>
+        <select name="ChestPainType">
+            <option value="Type1">Type1</option>
+            <option value="Type2">Type2</option>
+            <option value="Type3">Type3</option>
+            <option value="Type4">Type4</option>
+        </select><br>
+        <label>Resting ECG:</label>
+        <select name="RestingECG">
+            <option value="Normal">Normal</option>
+            <option value="ST">ST</option>
+            <option value="T">T</option>
+        </select><br>
+        <label>Exercise Angina:</label>
+        <select name="ExerciseAngina">
+            <option value="Y">Yes</option>
+            <option value="N">No</option>
+        </select><br>
+        <label>ST Slope:</label>
+        <select name="ST_Slope">
+            <option value="Up">Up</option>
+            <option value="Flat">Flat</option>
+            <option value="Down">Down</option>
+        </select><br>
+        <button type="submit">Predict</button>
+    </form>
+    {% if prediction is not none %}
+        <h2>Prediction: {{ prediction }}</h2>
+    {% endif %}
+</body>
+</html>
